@@ -1,0 +1,357 @@
+<DOCTYPE html>
+<html>
+<style type="text/css">
+.animation-container {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 1;
+}
+.animation-container span {
+ color:whitesmoke;
+ display: block;
+ font-size: 10%;
+ font-family: 'Helvetica';
+ text-shadow: 0 0 1px white;
+ position: absolute;
+ user-select: none;
+ pointer-events: none;
+ cursor: default;
+ z-index:1;
+ opacity: 0;
+ will-change: transform, opacity;
+ animation-timing-function: ease-out;
+ animation-name: move;
+}
+@keyframes move {
+ 0% {
+   opacity: 0;
+   transform: translateY(100vh);
+ }
+ 25% {
+   opacity: 1;
+ }
+ 50% {
+   opacity: 1;
+ }
+ 75% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 0;
+   transform: none;
+ }
+}
+body{
+background-color:black;
+background-image:bg.jpg;
+}
+p#hallo {
+width:auto;
+	background-color:red;
+	padding:10px;
+	font-family:Arial,sans-serif;
+	text-align:center;
+	color:white;
+	font-size:30px;
+	box-shadow:0px 0px 10px white;
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 2s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+animation-name: blinker;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+f#hallo{
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 2s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+animation-name: blinker;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+footer{
+width:auto;
+background-color:lightblue;
+text-shadow:0px 0px 10px black;
+font-family:comic sans;
+position:bottom;
+border:2px solid white;
+}
+#isi {
+padding:3px;
+border:2px solid white;
+font-family:Courier new,monospace;
+background-color:maroon;
+width:auto;
+height:auto;
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 2s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+animation-name: blinker;
+animation-duration: 0.7s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+img{
+width:98%;
+height:70%;
+border-bottom:transparent;
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 0.1s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+animation-name: blinker;
+animation-duration: 1.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+</style>
+<style type="text/css">
+#an{
+font-family:Arial,sans-serif;
+background-color:red;
+border-right:2px solid white;
+border-left:2px solid white;
+box-shadow:0px 0px 10px black;
+border-bottom:2px solid white;
+border-top:2px solid white;
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 2s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+animation-name: blinker;
+animation-duration: 0.1s;
+animation-timing-function: linear;  /*Yang recode kyk kontol*/
+animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+marquee{
+width:50%;
+marquee-direction:left;
+marquee-speed:slow;
+font-family:Arial,sans-serif;
+color:white;
+}
+anu{
+font-family:comic sans;
+width:75%;
+height:2%;
+
+animation-name: blinker;
+animation-duration: 0.3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    
+}
+glow{
+text-shadow:0px 0px 2px black;
+}
+no{
+text-shadow:0px 0px 10px red;
+}
+</style>
+	<body>
+	<script type="text/javascript">
+	alert("sorry admin:)")
+	alert("Mr.D3BR0NG WAS HERE")
+	alert("please patch your system")
+	x = confirm("Continue?")
+		if(x){
+		alert("Thank you")
+		}
+		else{
+		alert("Fuck you")
+		}
+	</script>
+		<p id="hallo">
+		<anu><font face="arial" > HALLO ADMIN ☺ </anu></font>
+		  </p>
+		  <center>
+	<img src="http://www.baltasemlak.net/files/img(1).jpg"/>
+		<br>
+		<div id="isi"><font color="white" style="text-shadow:0px 0px 10px red" width="1%" height="1%" >
+			<script language="JavaScript1.2">
+			var message="Mr.D3BR0NG WAS HERE....!!!"
+			var neonbasecolor="red"
+			var neontextcolor="white"
+			var flashspeed=100
+			var n=0
+			
+			if (document.all||document.getElementById){
+			document.write('<font color="'+neonbasecolor+'">')
+			for (m=0;m<message.length;m++)
+			document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+			document.write('</font>')
+			}
+			else
+			document.write(message)
+			function crossref(number){
+			var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById
+			("neonlight"+number)
+			return crossobj
+			}
+			function neon(){
+			if (n==0){
+			for (m=0;m<message.length;m++)
+			crossref(m).style.color=neonbasecolor
+			}	crossref(n).style.color=neontextcolor
+			if (n<message.length-1)
+			n++
+			else{
+			n=0
+			clearInterval(flashing)
+			setTimeout("beginneon()",1)
+			return
+			}
+			}
+			function beginneon(){
+			if (document.all||document.getElementById)	flashing=setInterval("neon()",flashspeed)
+			}
+			beginneon()
+			//Kini sendiri disini temani ku tak tau dimana, semoga engkau bahagia disana selamanya//
+			//aku selalu mengingatmu do'a kanmu di setiap malam ku//
+			</script>
+		</div></font>
+		<script type="text/javascript">
+		var app = {
+		
+		chars: ['RAZERR CYBER NETWORK','Unleashed','127.0.0.1','PSYCHOTIC CYBER NETWORK','0x523344','Localhost','MR.D3BR0NG','HACKED!','YOUR SECURITY IS WEAK','Breached!','System'],
+		
+		init: function () {
+		app.container = document.createElement('div');
+		app.container.className = 'animation-container';
+		document.body.appendChild(app.container);
+		window.setInterval(app.add, 100);
+		},
+		
+		add: function () {
+		var element = document.createElement('span');
+		app.container.appendChild(element);
+		app.animate(element);
+		},
+		
+		animate: function (element) {
+		var character = app.chars[Math.floor(Math.random() * app.chars.length)];
+		var duration = Math.floor(Math.random() * 15) + 1;
+		var offset = Math.floor(Math.random() * (50 - duration * 2)) + 3;
+		var size = 10 + (15 - duration);
+		element.style.cssText = 'right:'+offset+'vw; font-size:'+size+'px;animation-duration:'+duration+'s';
+		element.innerHTML = character;
+		window.setTimeout(app.remove, duration * 1000, element);
+		},
+		
+		remove: function (element) {
+		element.parentNode.removeChild(element);
+		},
+		
+		};
+		
+		document.addEventListener('DOMContentLoaded', app.init);
+		</script>
+		<div id="an">
+		<marquee scrolldelay="2" scrollamount="5"><glow>
+		Greets to : Zero | Mr.CodenZa | Mr.Baldur | MR.V4N | Mr.Includex | L4N0R1A | And All Defacer
+		</div></marquee></center></glow>
+<footer><center><anu>Copyright © 2k19 | by Mr.D3BR0NG</footer></anu>
+</center>
+<iframe src="http://www.baltasemlak.net/files/Linkin%20Park%20-%20In%20The%20End.mp3" autoplay="autoplay" loop="loop" width="0" height="0" hidden="hidden" ></iframe>
+</body>
+</html>
+</DOCTYPE>
